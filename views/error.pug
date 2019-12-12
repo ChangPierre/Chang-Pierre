@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  #error.contenido
+    section
+      .content-404
+        img(src='/images/404/404.png', alt='')
+        h1
+          b OPPS!
+          |  We Couldn’t Find this Page
+        p
+          | Uh... So it looks like you brock something. The page you are looking for has up and Vanished.
+        h2
+          a(href='home.html') Bring me back Home
+        //p #{error.status} #{message}
+        //span #{error.stack}

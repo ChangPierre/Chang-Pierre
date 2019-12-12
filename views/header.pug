@@ -1,0 +1,50 @@
+header#header
+    .header-top.large
+        .container
+            .header-login(data-id='User')
+    .header-mobil.mobil
+        .container
+            .menu_mobil
+                ul.menu
+                    li
+                        a.menu-menu(href='javascript:void(0)')
+                            i.fa.fa-settings
+                            span.letra_menu MENÚ
+                        .sub-menu
+                            div
+                                ul#menuMobil
+            .search-mobil
+                a(href='javascript:')
+                    i.fa.fa-search
+                form(action='', method='get')
+                    div
+                        input#searchmobil(type='search', autocomplete='off', name='query', placeholder='Utilizame y encuentra lo que necesitas', required='required')
+            .logo-mobil
+                a(href='?')
+                    img(src='/images/home/logo.png', alt='logo')
+            .user-mobil
+                a(href='javascript:login()')
+                    i.fa.fa-user
+            .shopping-mobil
+                a(href='checkout')
+                    i.fa.fa-shopping-cart
+                    span(data-id='checkcont') 0
+    .header-middle.large
+        .container
+            .logo
+                a(href='/')
+                    img(src='/images/home/logo.png', alt='logo')
+            .search
+                form(action='', method='get')
+                    div
+                        input#search(name='query', type='search', placeholder='Utilizame y encuentra lo que necesitas', required='required')
+                    div
+                        button
+                            i.fa.fa-search
+            .shopping
+                a(href='checkout')
+                    i.fa.fa-shopping-cart
+                    span(data-id='checkcont') 0
+    .header-bottom.large
+        .container
+            ul.menu(data-id='menu')

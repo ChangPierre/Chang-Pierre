@@ -1,0 +1,26 @@
+.container.modal.hidden(data-id='login')
+    div
+        button(onclick='cerrarLogin()')
+            i.fa.fa-remove
+        .lateral
+            img(src='/images/home/logo.png', alt='Pet Shop', width='139')
+            ul
+                li MÁS DE 100.000 TOP MARCAS
+                li SIEMPRE PRECIOS BAJOS, GARANTIZADO
+                li AHORRA CON CADA COMPRA
+                li OFERTAS EXCLUSIVAS PARA CLIENTES REGISTRADOS
+        form.formulario(action='javascript:logearse()')
+            h2 Iniciar Sesión
+            .form
+                label(for='login_email') Correo Electronico
+                input#login_email(type='email', placeholder='Escribe tu e-mail', required='')
+                label(for='login_pass') Contraseña
+                input#login_pass(type='password', placeholder='Escribe tu contraseña', required='')
+                p.error.hidden(data-id='nodatos') Error
+                button Iniciar Sesión
+                p
+                    a(href='?pagina=others&others=politicas') ¿Tienes problemas para acceder? ¡Te ayudamos!
+            .otra
+                p
+                    | ¿Eres un cliente nuevo?
+                    a(href='javascript:registro()') Empieza aquí

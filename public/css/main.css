@@ -1,0 +1,2744 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block
+}
+
+audio, canvas, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+html {
+    font-family: sans-serif;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    margin: 0
+}
+
+a {
+    background: transparent
+}
+
+a:focus {
+    outline: 0
+}
+
+a:active, a:hover {
+    outline: 0
+}
+
+h1 {
+    margin: .67em 0;
+    font-size: 2rem
+}
+
+abbr[title] {
+    border-bottom: 0.1rem dotted
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+b, strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+hr {
+    height: 0;
+    -webkit-moz-box-sizing: content-box;
+    -moz-moz-box-sizing: content-box;
+    -ms-moz-box-sizing: content-box;
+    -o-moz-box-sizing: content-box;
+    moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+mark {
+    color: #000;
+    background: #ff0
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, serif;
+    font-size: 1rem
+}
+
+pre {
+    white-space: pre-wrap
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 0
+}
+
+fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 0.2rem;
+    border: 0.1rem solid #c0c0c0
+}
+
+legend {
+    padding: 0;
+    border: 0
+}
+
+button, input, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%
+}
+
+button, input {
+    line-height: normal
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button
+}
+
+input:focus, button:focus {
+    outline: 0;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+input[type="checkbox"], input[type="radio"] {
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 82.5%;
+    highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    line-height: 1.428571429;
+    color: #333;
+    background: #f0f0f0;
+    outline: 0;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+a {
+    color: #66512c;
+    text-decoration: none
+}
+
+li a {
+    padding: 0.8rem 1rem;
+    border: 0.1rem solid transparent;
+}
+
+li a i {
+    padding: 0 0.5rem;
+}
+
+a:focus {
+    outline-offset: -0.2rem
+}
+
+img {
+    vertical-align: middle
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*******************************************************************************************************/
+
+header, .header-mobil {
+    background: #fcd03f;
+    -webkit-box-shadow: 0 0.2rem 0.2rem 0 #00000033;
+    box-shadow: 0 0.2rem 0.2rem 0 #00000033;
+}
+
+header > div {
+    padding: 1rem 0;
+}
+
+.menu {
+    font-size: 1.3rem;
+}
+
+header .header-bottom {
+    padding-bottom: 0;
+}
+
+.header-bottom .menu > li > a > i {
+    display: block;
+}
+
+.menu > li:hover > a {
+    border: 0.1rem solid transparent;
+    background: #8a6d3b;
+    color: #ff9800;
+    -webkit-box-shadow: -0.2rem 0.2rem 0.2rem 0 #00000033;
+    box-shadow: -0.2rem 0.2rem 0.2rem 0 #00000033;
+}
+
+.header-mobil .menu > li:hover > a {
+    border: 0.1rem solid transparent;
+    background: #66512c;
+    color: #fcd03f;
+    -webkit-box-shadow: -0.2rem 0.2rem 0.2rem 0 #00000033;
+    box-shadow: -0.2rem 0.2rem 0.2rem 0 #00000033;
+}
+
+.menu > .sin-menu:hover > a {
+    border-radius: 1rem;
+}
+
+.sub-menu > div {
+    margin-top: -0.1rem;
+    border: 0.1rem solid transparent;
+    border-top-width: 0;
+    background: #8a6d3b;
+    -webkit-box-shadow: -0.2rem 0.2rem 0.2rem 0 #00000033;
+    box-shadow: -0.2rem 0.2rem 0.2rem 0 #00000033;
+}
+
+.sub-menu li > a {
+    color: #fcd03f;
+}
+
+.sub-menu li:hover > a {
+    color: #ff9800;
+    background: #0000001a;
+}
+
+.zona-vip > .sub-menu > div {
+    margin-top: 0.6rem;
+}
+
+.sub-menu > div a {
+    padding: 1rem 2rem;
+}
+
+.header-mobil .sub-menu > div a {
+    padding: 2rem;
+}
+
+.zona-vip div, .zona-vip a {
+    text-align: center;
+}
+
+.zona-vip h3 {
+    padding: 0 1rem;
+}
+
+.nick {
+    color: #fcd03f;
+}
+
+.search input {
+    background-color: rgba(255, 255, 255, .3);
+    border: 0.1rem solid rgba(255, 255, 255, .3);
+    border-right-width: 0;
+    border-radius: 0.3rem 0 0 0.3rem;
+    padding-left: 1rem;
+    top: 0;
+}
+
+.search input:hover, .search input:focus, .search button:hover {
+    background-color: #f6f4f4;
+}
+
+.search button {
+    background-color: rgba(255, 255, 255, .3);
+    border: 0.1rem solid rgba(255, 255, 255, .3);
+    border-left-width: 0;
+    border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.shopping i {
+    border: 0.1rem solid transparent;
+    padding: 0.5rem;
+    font-size: 3.5rem;
+}
+
+.shopping span {
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    border: 0.1rem solid #66512c;
+    background: white;
+    border-radius: 1.5rem;
+}
+
+.shopping a:hover span {
+    color: #fcd03f;
+    background: #66512c;
+}
+
+.sub-menu .sub-menu > div {
+    border-left-width: 0;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0 #00000033;
+}
+
+.header-mobil {
+    font-size: 3rem;
+}
+
+.menu-menu {
+    font-size: 2rem;
+}
+
+.menu-menu i {
+    display: initial;
+}
+
+header > .header-mobil {
+    padding: 0;
+    z-index: 5;
+}
+
+.header-mobil .menu {
+    vertical-align: text-bottom;
+    display: inline-block;
+}
+
+.menu_mobil .menu > li > div {
+    margin-left: -0.1rem;
+    border: 0.1rem solid transparent;
+}
+
+.menu_mobil .menu-menu {
+    display: flex;
+}
+
+.menu_mobil .menu-menu i {
+    font-size: 3rem;
+}
+
+.search-mobil a, .user-mobil a, .shopping-mobil a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid transparent;
+}
+
+.search-mobil a:hover, .user-mobil a:hover, .shopping-mobil a:hover {
+    background: #66512c;
+    color: #fcd03f;
+}
+
+.search-mobil:hover > form > div > input, .search-mobil > form > div > input:focus {
+    display: block;
+}
+
+.search-mobil > form {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.search-mobil > form > div > input {
+    display: none;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    -webkit-transition: linear .2s;
+    -o-transition: linear .2s;
+    transition: linear .2s;
+    width: 100%;
+    border: 0.1rem solid rgba(0, 0, 0, .3);
+    padding-left: 1rem;
+}
+
+.logo-mobil {
+    margin: auto;
+    display: none;
+}
+
+.header-mobil .shopping-mobil span {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    border: 0.1rem solid #66512c;
+    background: white;
+    border-radius: 1rem;
+}
+
+.header-mobil .shopping-mobil:hover span {
+    border: transparent;
+    background: transparent;
+}
+
+/*******************************************************************************************************/
+
+footer {
+    background: #66512c;
+    box-shadow: 0 -0.2rem 0.2rem 0 #00000033;
+    color: #fcd03f;
+}
+
+footer a {
+    color: #fcd03f;
+}
+
+.envio {
+    background: #8a6d3b;
+}
+
+.suscripcion > input {
+    position: relative;
+    top: 1px;
+    margin: -4px;
+    height: 3.45rem;
+    padding: 0 0.5rem;
+    background-color: #fcd03f40;
+    border: 0.1rem solid rgba(255, 255, 255, .3);
+    border-right-width: 0;
+    border-radius: 0.3rem 0 0 0.3rem;
+    -webkit-transition: linear .3s;
+    -o-transition: linear .3s;
+    transition: linear .3s;
+}
+
+.suscripcion > input:hover, .suscripcion > input:focus {
+    background-color: white;
+}
+
+.suscripcion > button {
+    color: #66512c;
+    font-weight: bold;
+    height: 3.5rem;
+    background-color: #fcd03f;
+    border: 0.1rem solid #fcd03f;
+    border-radius: 0 0.3rem 0.3rem 0;
+    -webkit-transition: linear .3s;
+    -o-transition: linear .3s;
+    transition: linear .3s;
+}
+
+.suscripcion > button:hover {
+    background-color: #fbc000;
+}
+
+.condicion {
+    display: block;
+    margin: 1rem 0;
+}
+
+.condicion input {
+    vertical-align: middle;
+}
+
+.resalte {
+    color: white;
+}
+
+.resalte:hover {
+    color: silver;
+}
+
+.redes li {
+    font-size: 3rem;
+    border: 0.2rem solid transparent;
+    display: inline-block;
+    border-radius: 3.5rem;
+    background: #fbc000;
+    margin: 1rem;
+    -webkit-transition: linear .3s;
+    -o-transition: linear .3s;
+    transition: linear .3s;
+}
+
+.redes a {
+    color: #66512c;
+    display: flex;
+    padding: 1.5rem;
+    text-align: center;
+    -webkit-transition: linear .3s;
+    -o-transition: linear .3s;
+    transition: linear .3s;
+}
+
+.redes li:hover {
+    border: 0.2rem solid #fbc000;
+    background: #66512c;
+}
+
+.redes a:hover {
+    color: #fbc000;
+}
+
+.redes i {
+    padding: 0;
+}
+
+.idiomas {
+    border: solid #8a6d3b;
+    border-width: 0 0 0.2rem 0;
+}
+
+.idiomas div {
+    margin: 1rem 0;
+}
+
+.idiomas a, .final a {
+    padding: 0 0.5rem;
+}
+
+.idiomas a:hover, .final a:hover {
+    color: silver;
+}
+
+.final {
+    margin: 0 1rem;
+}
+
+/*******************************************************************************************************/
+.modal {
+    overflow: auto;
+    position: fixed;
+    background-color: rgba(72, 70, 65, .82);
+    display: flex;
+    justify-content: center;
+    max-width: 100% !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    -webkit-transition: opacity .4s .2s ease-out;
+    -o-transition: opacity .4s .2s ease-out;
+    transition: opacity .4s .2s ease-out;
+}
+
+.overflowH {
+    overflow: hidden;
+}
+
+.modal:before {
+    content: "";
+    background-color: rgba(69, 65, 60, .5);
+    background-image: url(../images/home/background.png);
+    -webkit-background-size: 62rem;
+    background-size: 62rem;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    opacity: .4;
+}
+
+.modal > div {
+    position: relative;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 0.4rem;
+    display: flex;
+    -webkit-transition: transform .2s .1s ease-out;
+    -o-transition: transform .2s .1s ease-out;
+    transition: transform .2s .1s ease-out;
+}
+
+.modal > div > button {
+    position: absolute;
+    font-size: 2rem;
+    top: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: 1;
+    color: #cc3872;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    text-align: center;
+}
+
+.modal > div > button > i {
+
+}
+
+.modal .lateral {
+    display: none;
+    margin: auto;
+    margin-top: 0;
+    background-color: #ffd44a;
+    background: #e8b200;
+    background: -moz-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #e8b200), color-stop(100%, #ffd95e));
+    background: -webkit-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    background: -o-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    background: -ms-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    background: linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8b200', endColorstr='#ffd95e', GradientType=1);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    width: 26rem;
+    padding: 2rem 4.8rem 1rem 3.8rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+    box-shadow: 0 0.4rem 2rem -0.4rem rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.modal .lateral img {
+    margin: 2rem auto 0;
+}
+
+.modal .lateral ul {
+    width: 95%;
+    margin: 3.6rem auto;
+}
+
+.modal .lateral ul li {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.3rem;
+    letter-spacing: 0.08rem;
+    line-height: 1.4;
+}
+
+.modal .lateral p {
+    font-size: 1.1rem;
+}
+
+.modal .formulario {
+    min-width: 28rem;
+    width: 100%;
+    -webkit-box-shadow: 0 0.2rem 2.2rem -0.7rem rgba(0, 0, 0, .64), 0 4rem 7rem -3rem rgba(31, 31, 31, .4);
+    box-shadow: 0 0.2rem 2.2rem -0.7rem rgba(0, 0, 0, .64), 0 4rem 7rem -3rem rgba(31, 31, 31, .4);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    background-color: #fff;
+}
+
+.modal .formulario h2 {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 0.4rem solid;
+    border-color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: black;
+    margin-top: 0;
+}
+
+.modal .formulario .form {
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+}
+
+.modal .formulario label {
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: #414141;
+    margin-bottom: 0.8rem;
+    padding-left: 0.2rem;
+    text-transform: uppercase;
+}
+
+.modal .formulario label:first-child {
+    font-weight: bold;
+}
+
+.modal .formulario .detalle_envio_echo label, .modal .formulario .detalle_pago_echo label {
+    text-transform: initial;
+    font-size: 1.25rem;
+}
+
+.modal .formulario label a {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal .formulario input, .modal .formulario select {
+    width: 100%;
+    height: 4rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    color: #141414;
+    margin-bottom: 2rem;
+    background-color: #f4f4f4;
+    border: 0;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    font-weight: 200;
+    outline: 0;
+}
+
+.modal .formulario .mitad {
+    width: 46%;
+}
+
+.modal .formulario label.mitad {
+    display: inline-block;
+}
+
+.modal .formulario .mitad.right {
+    margin-right: 4%;
+}
+
+.modal .formulario .mitad.left {
+    margin-left: 4%;
+}
+
+.modal .formulario input:hover {
+    background-color: #ededed;
+}
+
+.modal .formulario input:focus {
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 0.8rem 0.2rem #eee;
+    box-shadow: inset 0 0 0.8rem 0.2rem #eee;
+}
+
+.modal .formulario .error {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fa5546;
+    text-align: center;
+    min-height: 1.8rem;
+}
+
+.modal .formulario button {
+    background-color: #00c167;
+    border: 0;
+    border-bottom: 0.3rem solid #04a75b;
+    width: 100%;
+    height: 4rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+    -webkit-transition: box-shadow .3s ease-in, background-color .12s ease-in;
+    -o-transition: box-shadow .3s ease-in, background-color .12s ease-in;
+    transition: box-shadow .3s ease-in, background-color .12s ease-in;
+}
+
+.modal .formulario button:hover {
+    background-color: #00a859;
+    box-shadow: 0 1.4rem 4rem -2rem #08c3
+}
+
+.modal .formulario button:active {
+    background-color: #04a75b;
+    border-bottom: 0.3rem solid #049148;
+}
+
+.modal .formulario p {
+    text-align: center;
+}
+
+.politica {
+    display: block;
+}
+
+.modal .formulario a {
+    color: #78b800;
+}
+
+.modal .formulario a:hover {
+    color: #4f8022;
+}
+
+.modal .formulario > .otra {
+    padding: 1.6rem 3rem;
+    background-color: #ececec;
+    text-align: center;
+    bottom: 0;
+}
+
+/*******************************************************************************************************/
+
+.modal .perfil_opciones {
+    display: block;
+    margin: 0 auto auto;
+    background-color: #ffd44a;
+    background: #e8b200;
+    background: -moz-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #e8b200), color-stop(100%, #ffd95e));
+    background: -webkit-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    background: -o-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    background: -ms-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    background: linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8b200', endColorstr='#ffd95e', GradientType=1);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    width: 26rem;
+    box-shadow: 0 0.4rem 2rem -0.4rem rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.modal .perfil_opciones img {
+    margin: 2rem auto 0;
+}
+
+.perfil_laterales {
+    width: inherit;
+    display: block;
+    margin: 2rem 0rem;
+}
+
+.perfil_laterales .seccion:hover, .perfil_laterales .seccion.active {
+    border-color: transparent;
+}
+
+.modal .perfil_opciones ul li {
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.08rem;
+    line-height: 1.4;
+}
+
+.perfil_laterales .seccion:hover > div > a, .perfil_laterales .seccion.active > div > a {
+    background: #ffffff;
+}
+
+.perfil_laterales .seccion > div > a {
+    position: relative;
+    display: block;
+    padding: 1rem 1rem;
+    font-weight: bolder;
+}
+
+.perfil_laterales .seccion > div > a > i {
+    position: absolute;
+    margin: 0 0.5rem;
+    right: 0;
+}
+
+/*******************************************************************************************************/
+
+.modal .shop {
+    position: relative;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    border: 0.1rem solid transparent;
+    padding: 1.5rem;
+    padding-top: 3rem;
+    background: white;
+    border-radius: 0.5rem;
+    display: inline-flex;
+}
+
+.modal .shop > div {
+    padding: 1rem;
+}
+
+.modal .shop .producto {
+    margin-bottom: 5rem;
+}
+
+.producto.listImagenes {
+    display: table-cell;
+    vertical-align: top;
+    z-index: 2;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.producto.listImagenes span {
+    background: black;
+    color: white;
+    padding: 0.1rem 0;
+}
+
+.producto.listImagenes span.up {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.producto.listImagenes span.down {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.producto.listImagenes span i {
+    width: 100%;
+    text-align: center;
+}
+
+.producto.listImagenes ul {
+    z-index: 2;
+    max-height: 25rem;
+    overflow: hidden;
+}
+
+.producto.listImagenes ul li {
+    border: solid gray;
+    border-width: 0 0.1rem;
+    padding: 0.1em;
+    cursor: pointer;
+}
+
+.producto.listImagenes ul li.active {
+    background: #cccc;
+    cursor: default;
+}
+
+.producto.listImagenes ul li.active figure {
+    opacity: 0.5;
+
+}
+
+.producto.listImagenes figure img {
+    height: 6rem !important;
+    width: 6rem;
+}
+
+
+.modal .shop .producto figure img {
+    height: 30rem;
+}
+
+.modal .shop .opciones > a {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.modal .shop > div p {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.modal .shop .opciones ul {
+    max-height: 20rem;
+    overflow: auto;
+}
+
+.modal .shop .opciones li {
+    position: relative;
+    border-top: 0.1rem solid #ececec;
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+}
+
+.modal .shop .opciones b {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.checkbox .caracteristicas {
+    display: inline-grid;
+}
+
+.modal .shop .opciones .old-precio {
+    text-decoration: line-through;
+}
+
+.modal .shop .opciones .precio {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #cc3872;
+}
+
+.modal .shop .botones {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.5rem;
+    text-align: right;
+    font-weight: bolder;
+}
+
+.modal .shop .botones p span {
+    font-size: 2.6rem;
+    color: #cc3872;
+}
+
+.modal .shop .botones .listo {
+    text-align: center;
+    margin: 1rem 0 2.5rem 0;
+}
+
+.modal .shop .botones .cantidad {
+    margin: 0.1rem 1rem 1rem 1rem;
+}
+
+.boton_cant input, .boton_cant button {
+    height: 2.5rem;
+    border: 0.1rem solid #cdcdcd;
+    padding: 0.5rem;
+    text-align: center;
+    color: black;
+}
+
+.boton_cant input {
+    position: relative;
+    margin: -4px;
+    top: -1px;
+    width: 5rem;
+}
+
+.boton_cant input:hover,
+.boton_cant input:focus {
+    border-color: #4f8022;
+}
+
+.boton_cant button {
+    width: 2.5rem;
+    background: #cdcdcd;
+}
+
+.boton_cant button.fa-minus {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.boton_cant button.fa-plus {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.boton_cant button:hover {
+    background: #4f8022;
+}
+
+.modal .shop .botones .boton {
+    text-align: center;
+}
+
+.modal .shop .botones .boton button {
+    margin: 0 1rem 0.5rem 1rem;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #cc3872;
+    border-color: #cc3872;
+}
+
+.modal .shop .botones .boton button.relizado, .botoness button.realizado {
+    background-color: #9cce11;
+    border-color: #9cce11;
+}
+
+.modal .shop .botones .boton button.agotado, .botoness button.agotado {
+    background-color: #808080;
+    border-color: #808080;
+}
+
+/*******************************************************************************************************/
+
+.cesta {
+    position: relative;
+    padding: 2rem;
+    margin: 2rem 1rem;;
+    background-color: #fff;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+    -webkit-box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.26);
+}
+
+.cesta .botons {
+    margin: 1rem 0;
+}
+
+.cesta .botons > h2 {
+    display: none;
+}
+
+.cesta .botons > div {
+    display: inline-block;
+}
+
+.cesta .botons > h2 {
+    color: #cc3872;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cesta .botons > div a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.6rem;
+    color: #78b800;
+    background-color: #fff;
+    border: 0.1rem solid #78b800;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.cesta .botons > div button, .cesta .total > button {
+    margin: 0 0.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #cc3872;
+    border-color: #cc3872;
+    font-weight: 600;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+.cesta .botons > div button {
+    display: none;
+}
+
+.cesta > table {
+    width: 100%;
+}
+
+#tableCheck tr th:first-child, #tableCheck tr td:first-child,
+#tableCheck tr th:nth-child(3), #tableCheck tr td:nth-child(3) {
+    display: none;
+}
+
+#tableCheck tr th:nth-child(1), #tableCheck tr td:nth-child(1) {
+    display: table-cell;
+}
+
+#tableCheck tr th:nth-child(2), #tableCheck tr td:nth-child(2) {
+    display: none;
+}
+
+.cesta > table th {
+    background: #ececec;
+    padding: 0.5rem 1rem;
+}
+
+.cesta > table tr {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ececec;
+}
+
+.cesta > table td {
+    text-align: center;
+}
+
+.cesta > table img {
+    max-width: 6rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.cesta > table td.prod {
+    text-align: left;
+}
+
+.cesta > table td.pvp > span {
+    padding: 0.5rem 0;
+}
+
+.cesta > table td.prod > a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #48423d;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.cesta > table td > span {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 11px;
+    color: #666;
+}
+
+.cesta > table td.cont {
+    white-space: nowrap;
+}
+
+.cesta > table td.precio {
+    color: #48423d;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cesta > table td.recycle > button {
+    color: #969696;
+    font-size: 1.5rem;
+    background: transparent;
+    border: 0;
+}
+
+.cesta > table td.recycle > button:hover {
+    color: #e45e55;
+}
+
+.cesta .total {
+    text-align: right;
+}
+
+.cesta .total table {
+    width: 100%;
+}
+
+.cesta .total table th {
+    width: 10%;
+    min-width: 5rem;
+    max-width: 10rem;
+    font-size: 1.6rem;
+}
+
+.cesta .total table td, .cesta .total table th {
+    padding: 0.5rem;
+}
+
+.cesta .total table td {
+    font-size: 1.5rem;
+}
+
+.cesta .total table th.precio {
+    font-size: 2rem;
+    color: #cc3872;
+    font-weight: bold;
+}
+
+/*******************************************************************************************************/
+
+.historial {
+    min-width: 28rem;
+    width: 100%;
+    -webkit-box-shadow: 0 0.2rem 2.2rem -0.7rem rgba(0, 0, 0, .64), 0 4rem 7rem -3rem rgba(31, 31, 31, .4);
+    box-shadow: 0 0.2rem 2.2rem -0.7rem rgba(0, 0, 0, .64), 0 4rem 7rem -3rem rgba(31, 31, 31, .4);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    background-color: #fff;
+    position: relative;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.modal .historial h2 {
+    text-align: center;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: black;
+    margin-top: 0;
+}
+
+.modal .historial h3 {
+    border-bottom: 0.4rem solid;
+    border-color: #ffd44a;
+    padding: 4rem 1rem 0;
+}
+
+.historial > table {
+    margin: 1rem;
+}
+
+.historial > table tr {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ececec;
+}
+
+.historial > table th {
+    background: #ececec;
+    padding: 0.5rem 1rem;
+}
+
+.historial > table img {
+    max-width: 6rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.historial > table td {
+    text-align: center;
+}
+
+.historial > table td.prod > a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #48423d;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.historial > table td > span {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 11px;
+    color: #666;
+}
+
+.historial > table td.cont {
+    white-space: nowrap;
+}
+
+.historial > table td.precio {
+    color: #48423d;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.historial .total {
+    text-align: right;
+    margin: 1rem;
+}
+
+.historial .total table {
+    width: 100%;
+}
+
+.historial .total table td {
+    font-size: 1.5rem;
+}
+
+.historial .total table td, .historial .total table th {
+    padding: 0.5rem;
+}
+
+.historial .total table th {
+    width: 10%;
+    min-width: 5rem;
+    max-width: 10rem;
+    font-size: 1.6rem;
+}
+
+.historial .total table th.precio {
+    font-size: 2rem;
+    color: #cc3872;
+    font-weight: bold;
+}
+
+/*******************************************************************************************************/
+.laterales {
+    width: inherit;
+    display: none;
+    margin: 2rem 1.5rem;
+    box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.26);
+    background-color: white;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.laterales > div {
+    color: #666;
+    font-size: 1.8rem;
+    line-height: 1.1
+}
+
+.laterales > div > span {
+    padding: 1rem 1.5rem;
+    position: relative;
+    display: block;
+}
+
+.laterales .seccion {
+    border-top: 0.1rem solid #ececec;
+}
+
+.laterales .seccion > div > a {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.laterales .seccion > div > a > i {
+    position: absolute;
+    margin: 0 0.5rem;
+    right: 0;
+}
+
+.laterales .seccion > ul {
+    display: none;
+    padding: 0.5rem 0;
+    border-top: 0.1rem solid #ececec;
+}
+
+.laterales .seccion:hover, .laterales .seccion.active {
+    border-color: transparent;
+    margin-bottom: -2px;
+}
+
+.laterales .seccion:hover > div > a, .laterales .seccion.active > div > a {
+    background: #fcd03f;
+    font-weight: bolder;
+}
+
+.laterales .seccion:hover > ul, .laterales .seccion.active > ul {
+    display: block;
+    border: 0.1rem solid #fcd03f;
+}
+
+.checkbox {
+    position: relative;
+    margin: 0.5rem 1.5rem;
+    padding-left: 2rem;
+}
+
+.checkbox > input {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    margin: 0.4rem 0 0 -2rem;
+}
+
+.checkbox > input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+.checkbox > input[type="radio"] + label {
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+.checkbox > input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    left: 0;
+    margin-left: -2rem;
+    border: 0.1rem solid #cdcdcd;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    -webkit-webkit-transition: border .15s ease-in-out, color .15s ease-in-out;
+    -moz-webkit-transition: border .15s ease-in-out, color .15s ease-in-out;
+    -ms-webkit-transition: border .15s ease-in-out, color .15s ease-in-out;
+    -o-webkit-transition: border .15s ease-in-out, color .15s ease-in-out;
+    webkit-transition: border .15s ease-in-out, color .15s ease-in-out;
+}
+
+.checkbox > input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    left: 0;
+    top: 2.5rem;
+    margin-left: -2rem;
+    border: 0.1rem solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: border .15s ease-in-out;
+    -o-transition: border .15s ease-in-out;
+    transition: border .15s ease-in-out;
+}
+
+.checkbox > input[type="checkbox"] + label:after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    left: 0;
+    margin-left: -2rem;
+    padding-left: 0.4rem;
+    padding-top: 0.2rem;
+    font-size: 1.1rem;
+    color: transparent;
+}
+
+.checkbox > input[type="radio"] + label:after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 1rem;
+    height: 1rem;
+    left: 0.28rem;
+    top: 2.5rem;
+    margin-left: -2rem;
+    margin-top: 0.28rem;
+    border-radius: 50%;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    background-color: transparent;
+}
+
+.checkbox > input[type="checkbox"]:checked + label::before,
+.checkbox > input[type="radio"]:checked + label::before {
+    border-color: #78b800;
+}
+
+.checkbox > input[type="checkbox"]:checked + label::after {
+    color: #78b800;
+}
+
+.checkbox > input[type="radio"]:checked + label::after {
+    background-color: #78b800;
+}
+
+.laterales .precio > ul > li {
+    position: relative;
+    margin: 4rem 3rem;
+    padding: 0;
+    height: 0.8rem;
+}
+
+.laterales .precio .barra {
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    border-radius: 1rem;
+    background: #fcd03f;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+
+}
+
+.laterales .precio .punto {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-left: -0.6rem;
+    margin-top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    background: #ff9800;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.laterales .precio .punto > div {
+    position: absolute;
+    top: -2rem;
+    width: 5rem;
+    margin-left: -1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.laterales .precio .punto:hover {
+    background: #d88711;
+}
+
+.laterales .precio .punto.min {
+    left: 10%;
+}
+
+.laterales .precio .punto.max {
+    left: 75%;
+}
+
+.laterales .precio .rango {
+    position: absolute;
+    top: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.laterales .precio .rango.min {
+    left: -1rem;
+}
+
+.laterales .precio .rango.max {
+    right: -1rem;
+}
+
+/*******************************************************************************************************/
+.pages {
+    text-align: center;
+}
+
+.pages > ul {
+    display: inline-block;
+    padding-left: 0;
+    margin: 2rem 0;
+    border-radius: 0.4rem;
+}
+
+.pages > ul > li {
+    display: inline;
+}
+
+.pages > ul > li:first-child > a, .pages > ul > li:first-child > span {
+    margin-left: 0;
+    border-bottom-left-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+}
+
+.pages > ul > li:last-child > a, .pages > ul > li:last-child > span {
+    border-bottom-right-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+
+.pages > ul > li > span, .pages > ul > li > a {
+    color: #555;
+    position: relative;
+    float: left;
+    padding: 0.6rem 1.2rem;
+    line-height: 1.42857;
+    text-decoration: none;
+    background-color: #fff;
+    border: 0.1rem solid #ddd;
+    margin-left: -0.1rem;
+}
+
+.pages > ul > li.active > span {
+    background-color: #555;
+    border-color: #555;
+    color: #fff;
+}
+
+.pages > ul > li.disabled > span {
+    color: #cdcdcd;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pages > ul > li > a:hover {
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+/*******************************************************************************************************/
+.ant_sig {
+    text-align: right;
+    padding: 1rem;
+    color: #555;
+}
+
+.prodto {
+    display: flow-root;
+}
+
+.prodto > article {
+    padding: 1rem;
+    border-radius: 0.2rem;
+    background-color: #fff;
+    margin-bottom: 1.6rem;
+    -webkit-box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.26);
+}
+
+.prodto .detalles .head {
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid #ececec;
+}
+
+.prodto .detalles .head > div {
+    display: table-cell;
+    padding: 0 0.5rem;
+}
+
+.prodto .detalles .head .nombre {
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.prodto .detalles .head .price {
+    vertical-align: middle;
+    text-align: right;
+}
+
+.prodto .detalles .head .price > span {
+    display: block;
+}
+
+.prodto .detalles .head .price .old-precio {
+    color: #9e9e9e;
+    text-decoration: line-through;
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
+}
+
+.prodto .detalles .head .price .precio {
+    color: #cc3872;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.prodto .img, .prodto .conten {
+    display: table-cell;
+}
+
+.prodto .img figure img {
+    max-width: 24rem;
+    padding: 1rem;
+}
+
+.prodto .conten {
+    width: 100%;
+    vertical-align: top;
+    padding: 1.5rem;
+}
+
+.prodto .conten .caract {
+    text-align: justify;
+}
+
+.prodto .conten .caract a {
+    color: #78b800;
+}
+
+.prodto .conten .caract a:hover {
+    color: #5a9500;
+}
+
+.option ul {
+    max-height: 30rem;
+    overflow: auto;
+}
+
+.option li {
+    position: relative;
+    border-top: 0.1rem solid #ececec;
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+}
+
+.option li label {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.option b {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.option .old-precio {
+    text-decoration: line-through;
+}
+
+.option .precio {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #cc3872;
+}
+
+.checkbox > input[type="radio"]:checked + label > span.buton {
+    display: inline-block;
+    padding: 2rem 0;
+}
+
+.type {
+    display: inline-block;
+    padding: 0.3rem;
+}
+
+.buton {
+    display: none;
+    float: right;
+}
+
+.botoness {
+    text-align: right;
+    font-weight: bolder;
+}
+
+.botoness p {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.botoness p span {
+    font-size: 2.6rem;
+    color: #cc3872;
+}
+
+.botoness button {
+    width: 100%;
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #cc3872;
+    border-color: #cc3872;
+}
+
+.datos {
+    margin: 2rem 0;
+}
+
+.datos > div {
+    border: 0.1rem solid #ddd;
+    padding: 1.5rem 3rem;
+    margin: 0 1rem;
+    background: #fff;
+    display: inline-block;
+}
+
+.datos .titulo {
+    position: relative;
+    top: 0.2rem;
+    font-size: 2rem;
+    color: #cc3872;
+    border-bottom: 0.1rem solid #fff;
+    font-weight: 600;
+    -webkit-box-shadow: 0 -0.2rem 0.2rem 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 -0.2rem 0.2rem 0 rgba(0, 0, 0, 0.26);
+    border-radius: 0.5rem 0.5em 0 0;
+}
+
+.datos .conte {
+    display: block;
+    -webkit-box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.26);
+    box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.26);
+    border-radius: 0 0.5em 0.5rem 0.5rem;
+}
+
+.datos .conte > ul {
+    list-style: inside;
+}
+
+.datos .conte > ul li {
+    padding: 1rem;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+
+}
+
+.datos .conte table {
+    border: 2px solid #78b800;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.datos .conte table th, .datos .conte table td {
+    padding: 8px 4px;
+    border-top: 1px solid #fff;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.datos .conte table th {
+    background-color: #78b800;
+    color: #fff;
+    font-weight: 600;
+}
+
+.datos .conte table td {
+    background-color: #edf6d7;
+}
+
+/*******************************************************************************************************/
+
+.banner {
+    position: relative;
+    box-shadow: 0 0.7rem 3rem -0.5rem rgba(0, 0, 0, .12);
+    border-radius: 1rem;
+    margin: 2rem auto;
+    overflow: hidden;
+    max-width: 1100px;
+}
+
+.banner .bannerlist {
+    position: relative;
+    display: -webkit-box;
+}
+
+@-webkit-keyframes bannnerAnimacion {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: -1100px;
+    }
+    100% {
+        left: -2200px;
+    }
+}
+
+.banner .bannerlist li {
+    display: block;
+}
+
+.banner .bannerlist li.activeBanner {
+    display: block;
+}
+
+.banner .bannerlist > li > a {
+    padding: 0;
+    border: 0;
+}
+
+.banner .bannerlist > li > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.banner .bannerNav {
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    right: 1rem;
+}
+
+.banner .bannerNav li.activeBanner, .banner .bannerNav li:hover {
+    background-color: #78b800;
+}
+
+.banner .bannerNav li {
+    float: left;
+    cursor: pointer;
+    margin-left: 1rem;
+    background: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.2rem solid #78b800;
+    border-radius: 1.5rem;
+    transition: linear .3s;
+}
+
+/*******************************************************************************************************/
+
+.box.banner {
+    background: #fbfbfbfb;
+    border-radius: 0.2rem;
+    margin: 2rem 1rem;
+    max-width: initial;
+}
+
+.box h2 {
+    padding-left: 1rem;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #78b800;
+}
+
+.box .mini.productos {
+    position: relative;
+    display: -webkit-box;
+    margin-bottom: 5rem;
+    transition: linear .3s;
+}
+
+.box.banner > div > div {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin: 0 1rem;
+    margin-top: -3rem;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1;
+    background-color: #78b800;
+    padding: 2.4rem 0.5rem 2.4rem 0.6rem;
+    border-radius: 1.2rem;
+    -webkit-transition: linear .3s;
+    -moz-transition: linear .3s;
+    -ms-transition: linear .3s;
+    transition: linear .3s;
+}
+
+.box.banner > div > div:hover {
+    background-color: #9cce11;
+}
+
+.box.banner .prev {
+    left: 0;
+}
+
+.box.banner .next {
+    right: 0;
+}
+
+@-webkit-keyframes boxAnimacion {
+    0% {
+        left: -182px;
+    }
+    25% {
+        left: -364px;
+    }
+    50% {
+        left: -546px;
+    }
+    75% {
+        left: -728px;
+    }
+    100% {
+        left: -910px;
+    }
+}
+
+/*******************************************************************************************************/
+
+.mini.productos {
+    margin: 0;
+}
+
+.productos {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 0 5rem 0;
+}
+
+.mini.productos > li {
+    min-width: 14rem;
+    width: 15rem;
+    margin: 0.5rem;
+    border: 0;
+}
+
+.productos > li {
+    position: relative;
+    overflow: visible;
+    margin: 1rem auto;
+    border: 0.1rem solid silver;
+    border-radius: 0.6rem;
+    min-width: 20rem;
+    width: 21.5rem;
+}
+
+.productos > li:hover {
+    -webkit-box-shadow: 0 0.3rem 2rem -0.3rem rgba(30, 30, 30, .25);
+    box-shadow: 0 0.3rem 2rem -0.3rem rgba(30, 30, 30, .25);
+    border: 0;
+}
+
+.box.banner .mini.productos button {
+    display: block;
+}
+
+.productos button {
+    -webkit-box-shadow: 0 0.3rem 2rem -0.3rem rgba(30, 30, 30, .25);
+    box-shadow: 0 0.3rem 2rem -0.3rem rgba(30, 30, 30, .25);
+    z-index: 1;
+    margin-top: -0.1rem;
+    position: absolute;
+    display: none;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    background: #fbc000;
+    color: #66512c;
+    border: 0;
+    border-bottom: 0.3rem solid #e8c040;
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-weight: bold;
+}
+
+.mini.productos > li:hover button, .productos > li button:hover {
+    font-size: 1.4rem;
+}
+
+.productos > li:hover button {
+    display: inline-block;
+}
+
+.productos > li button:hover {
+    background: #ffd650;
+}
+
+.productos > li button:active {
+    background: #fbc000;
+}
+
+.productos > li:hover .producto {
+    border: 0.1rem solid silver;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.mini.productos .producto {
+    border: 0.1rem solid silver;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.productos .producto {
+    overflow: hidden;
+    background: white;
+    border-radius: 0.6rem;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.productos figure {
+    text-align: center;
+}
+
+.mini.productos figure img {
+    max-height: 10rem;
+}
+
+.productos figure img {
+    max-height: 15rem;
+}
+
+.productos .marca {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #5e5e5e;
+}
+
+.productos figcaption {
+    height: 4rem;
+    overflow: hidden;
+    -webkit-flex: 0 0 4rem;
+    -moz-flex: 0 0 4rem;
+    -ms-flex: 0 0 4rem;
+    -o-flex: 0 0 4rem;
+    flex: 0 0 4rem;
+}
+
+.productos figcaption span {
+    letter-spacing: .01em;
+    font-size: 1.1rem;
+}
+
+.productos .precios {
+    margin-top: 1rem;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    -webkit-flex: 0 0 8.2rem;
+    -moz-flex: 0 0 8.2rem;
+    -ms-flex: 0 0 8.2rem;
+    -o-flex: 0 0 8.2rem;
+    flex: 0 0 8.2rem;
+    -ms-align-items: baseline;
+    align-items: baseline;
+}
+
+.mini.productos .precios > div {
+    -webkit-flex: 1 0 50%;
+    -moz-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    -o-flex: 1 0 50%;
+    flex: 1 0 50%;
+}
+
+.productos .precios > div {
+    -webkit-flex: 1 0 100%;
+    -moz-flex: 1 0 100%;
+    -ms-flex: 1 0 100%;
+    -o-flex: 1 0 100%;
+    flex: 1 0 100%;
+}
+
+.productos .old-precio {
+    color: #9e9e9e;
+    text-decoration: line-through;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.productos .precios > .precio {
+    -webkit-flex: 0 0 auto;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    -o-flex: 0 0 auto;
+    flex: 0 0 auto;
+    font-size: 2.5rem;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-weight: bold;
+}
+
+.productos .precios > .precio > span {
+    font-size: 1.5rem;
+}
+
+.productos .precios > .descuento {
+    -webkit-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    -o-flex: 0 0 50%;
+    flex: 0 0 50%;
+    color: #ff9800;
+    font-size: 1.6rem;
+    padding-left: 3rem;
+}
+
+.productos .precios > .descuento i {
+    margin-right: 0.5rem;
+}
+
+.productos .precios > .descuento span {
+    font-size: 1.2rem;
+    padding-left: 0.1rem;
+}
+
+.productos .apartir {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #6b6b6b;
+    align-self: flex-start;
+}
+
+.productos .putuacion {
+    margin-top: 0.5rem;
+    margin-left: -0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.productos .putuacion ul li {
+    display: inline-block;
+    color: #ff9800;
+}
+
+.productos .putuacion ul li.vacia {
+    color: #cdcdcd;
+}
+
+.productos .putuacion .numero {
+    font-size: 1.1rem;
+    color: #919191;
+    margin-left: 0.8rem;
+    font-weight: 400;
+}
+
+.productos .entrega {
+    position: relative;
+    margin: 1rem 0;
+    color: #47a447;
+}
+
+.productos .entrega span {
+    padding: 0.5rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.2rem;
+}
+
+.productos .entrega .text {
+    display: block;
+    padding-right: 4rem;
+}
+
+.productos .entrega .time {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    font-weight: bold;
+}
+
+.productos > li:hover .entrega .time > span {
+    background: #47a447;
+    color: white;
+}
+
+.productos .pesos {
+    margin: 0.5rem 0;
+}
+
+.boton-arriba a {
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    width: 5rem;
+    height: 3.5rem;
+    position: fixed;
+    margin: 0 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    background: rgba(0, 0, 0, 0.2);
+    border: 0.1rem solid transparent;
+    border-radius: 5rem 5rem 0 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: linear .3s;
+    -o-transition: linear .3s;
+    transition: linear .3s;
+}
+
+.boton-arriba a i {
+    margin: auto;
+}
+
+.boton-arriba a:hover {
+    background: black;
+    color: white;
+    height: 5rem;
+}
+
+/****************************************************************/
+
+article {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+article > div {
+    margin-left: 1rem;
+}
+
+article h1 > a, article h2 > a {
+    display: none;
+    padding-left: 0.375rem;
+    color: inherit;
+}
+
+article h1:hover > a, article h2:hover > a {
+    display: inline-block;
+}
+
+article h1 {
+    color: #9b6727;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+/****************************************************************/
+section .content-404 {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+section .content-404 img {
+    width: 100%;
+}
+
+section .content-404 h1 > b {
+    font-size: 5rem;
+}
+
+/****************************************************************/
+.foot > div {
+    text-align: center;
+    padding: 2rem;
+}
+
+.foot .menu li {
+    display: inline;
+}
+
+.header-bottom .menu a {
+    font-weight: bolder;
+    display: block;
+    width: 100%;
+}
+
+.header-bottom .menu > li {
+    margin-right: -0.4rem;
+    display: inline-block;
+}
+
+.header-bottom .menu {
+    text-align: center;
+}
+
+.shopping span {
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    -webkit-transition: linear .2s;
+    -o-transition: linear .2s;
+    transition: linear .2s;
+}
+
+.shopping {
+    position: relative;
+    text-align: right;
+}
+
+.search button {
+    width: calc(3.5rem + 4px);
+    height: calc(3.5rem + 3.8px);
+    -webkit-transition: linear .2s;
+    -o-transition: linear .2s;
+    transition: linear .2s;
+}
+
+.search input {
+    position: relative;
+    /* top: 1px; */
+    /* margin: -4px;*/
+    height: 3.5rem;
+    width: 25rem;
+    -webkit-transition: linear .2s;
+    -o-transition: linear .2s;
+    transition: linear .2s;
+}
+
+.search div {
+display: inline-block;
+}
+
+.search {
+text-align: center;
+}
+
+.header-middle > div > div {
+height: 3.9rem;
+}
+
+.header-middle .logo img, .header-mobil .logo-mobil img {
+max-height: 2rem;
+max-width: 25rem;
+}
+
+
+.header-mobil .shopping-mobil span {
+position: absolute;
+top: 0;
+right: 0;
+}
+
+.header-mobil .shopping-mobil {
+position: relative;
+text-align: right;
+}
+
+.header-mobil > div, .header-middle > div {
+display: flex;
+justify-content: space-between;
+}
+
+.header-mobil, .header-middle {
+display: block;
+}
+
+.header-mobil {
+position: fixed;
+width: 100%;
+}
+
+.header-login .sub-menu > div {
+right: 0;
+}
+
+.sub-menu .sub-menu > div {
+top: 1.2rem;
+}
+
+.sub-menu .sub-menu {
+float: right;
+}
+
+.sub-menu a {
+display: block;
+}
+
+.sub-menu li {
+position: relative;
+}
+
+.sub-menu > div {
+width: max-content;
+z-index: 5;
+position: absolute;
+}
+
+.sub-menu {
+display: none;
+}
+
+li:hover > .sub-menu {
+display: block
+}
+
+.header-login .sub-menu {
+position: relative;
+}
+
+.header-login .menu > li {
+display: inline-block;
+margin: 0 0.25rem;
+}
+
+.header-login {
+text-align: right;
+}
+
+.large {
+display: none;
+}
+
+.mobil {
+display: block;
+}
+
+.shop .producto {
+display: none;
+}
+
+.shop .opciones {
+margin-bottom: 20rem;
+}
+
+.letra_menu {
+padding-left: 0.5rem;
+display: none;
+}
+
+.hidden {
+display: none !important;
+}
+
+.contenido {
+padding-top: 5.4rem;
+}
+
+@media (max-width: 30rem) {
+.modal {
+    padding: 0 !important;
+}
+
+.modal > div {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal .shop {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+}
+
+@media (min-width: 30rem) {
+.letra_menu {
+    display: inline;
+}
+
+.suscripcion input {
+    width: 40rem;
+}
+
+.laterales {
+    display: block;
+}
+
+#tableCheck tr th:nth-child(1), #tableCheck tr td:nth-child(1) {
+    display: none;
+}
+
+#tableCheck tr th:nth-child(2), #tableCheck tr td:nth-child(2) {
+    display: table-cell;
+}
+
+.cesta .botons > h2 {
+    display: inline-block;
+}
+
+.cesta .botons > div {
+    float: right;
+}
+}
+
+@media (min-width: 37rem) {
+.logo-mobil {
+    display: block;
+}
+
+.suscripcion input {
+    width: 45rem;
+}
+
+.laterales {
+    width: 20%;
+    min-width: 20rem;
+    max-width: 30rem;
+}
+
+#tableCheck tr th:nth-child(3), #tableCheck tr td:nth-child(3) {
+    display: table-cell;
+}
+}
+
+@media (min-width: 48rem) {
+.large {
+    display: block;
+}
+
+.mobil {
+    display: none;
+}
+
+.shop .producto {
+    display: block;
+}
+
+.shop .opciones {
+    margin-bottom: 12rem
+}
+
+.contenido {
+    padding-top: 0;
+}
+
+.suscripcion input {
+    width: 50rem;
+}
+
+.modal .lateral {
+    display: block;
+}
+
+.politica {
+    display: none;
+}
+
+.modal .formulario h2:first-child {
+    border-color: #ffd44a;
+}
+
+.cesta .botons > div button {
+    display: inline-block;
+}
+
+#tableCheck tr th:first-child, #tableCheck tr td:first-child {
+    display: table-cell;
+}
+}
+
+.container {
+max-width: 90.25rem;
+width: 100%;
+padding-right: 1rem;
+padding-left: 1rem;
+margin-right: auto;
+margin-left: auto;
+}
+
+/*******************************************************************************************************/
+.modal-backdrop {
+    display: none;
+    opacity: .5;
+    -webkit-filter: alpha(opacity=50);
+    -o-filter: alpha(opacity=50);
+    filter: alpha(opacity=50);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}

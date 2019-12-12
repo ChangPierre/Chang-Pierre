@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    input#page(type="hidden" value=page)
+    #home.contenido
+        section
+            .banner(data-id='banner')
+        section
+            .box.banner
+                h2 Lo m&aacute;s vendido del mes!
+                ul.mini.productos(data-id='miniProductos1')
+                div
+                    .prev(onclick="prevSlider($(this))")
+                        i.fa.fa-chevron-left
+                    .next(onclick="nextSlider($(this))")
+                        i.fa.fa-chevron-right
+        section
+            article#productos
+                h1(style='text-align: center')
+                    span Algunos de nuestros productos
+                div
+                    ul.productos(data-id='Productos')
+        section
+            .pages(data-id='pages')

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    input#productoId(type="hidden" value=producto)
+    #producto.contenido
+        section
+            .ant_sig(data-id='ant_sig')
+        section.prodto
+            article.detalles(data-id='detalle')
+        section#caracteristicas.datos
+        section#ventajas.datos
+        section#uso.datos
+        section#descripcion.datos
+        section#dosificacion.datos

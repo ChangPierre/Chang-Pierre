@@ -1,0 +1,27 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        meta(name="author", content="MacKevin")
+        meta(name="description", content="Chang Pierre")
+        title= title
+        link(rel="stylesheet", href="/css/main.css")
+        link(rel="stylesheet", href="/css/font-awesome/css/font-awesome.css")
+    body
+        input#userID(type="hidden" value=idCliente)
+        include header
+        block content
+        .boton-arriba
+            a#arriba
+                i.fa.fa-arrow-up
+        include footer
+        .container.modal.hidden(data-id='compra')
+        include login
+        include registro
+        script(src="/lib/jquery-3.3.1.min.js")
+        script(src="/lib/dexie.js")
+        script(src="/socket.io/socket.io.js")
+        script(src="/js/main.js")
+        script(src="/js/" + funtionInitial + ".js")
+

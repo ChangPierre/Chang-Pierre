@@ -1,0 +1,38 @@
+.container.modal.hidden(data-id='registro')
+    div
+        button(onclick='cerrarRegistro()')
+            i.fa.fa-remove
+        .lateral
+            img(src='/images/home/logo.png', alt='Pet Shop', width='139')
+            ul
+                li MÁS DE 100.000 TOP MARCAS
+                li SIEMPRE PRECIOS BAJOS, GARANTIZADO
+                li AHORRA CON CADA COMPRA
+                li OFERTAS EXCLUSIVAS PARA CLIENTES REGISTRADOS
+            p
+                | Al registrarte confirmo que: He leído y acepto la
+                a(href='#')  política de privacidad
+                | .
+        form.formulario(action='javascript:registrarse()')
+            h2 Registrate
+            .form
+                label(for='registro_name') Nombre
+                input#registro_name(type='text', placeholder='Escribe tu nombre', required='')
+                label(for='registro_email') Correo Electronico
+                input#registro_email(type='email', placeholder='Escribe tu e-mail', required='')
+                label(for='registro_pass') Contraseña
+                input#registro_pass(type='password', placeholder='Escribe tu contraseña', required='')
+                label(for='registro_pass2') Contraseña
+                input#registro_pass2(type='password', placeholder='Escribe nuevamente la misma contraseña', required='')
+                p.error.hidden(data-id='nodatos') Error
+                button Crear Cuenta
+                p.politica
+                    | Al registrarte confirmo que: He leído y acepto la
+                    a(href='?pagina=others&others=politicas')
+                        | política de
+                        | privacidad
+                    | .
+            .otra
+                p
+                    | ¿Ya eres cliente?
+                    a(href='javascript:login()') ¡Entra en tu cuenta!
