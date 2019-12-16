@@ -56,7 +56,7 @@ $(document).ready(function () {
     var tam = 8;
     socket.emit("ObtenProductos", {limit: tam, offset: page});
     socket.on("ObtenProductos.RPTA",function (datos) {
-        var maximo = Math.ceil(datos.count/ tam) - 1;
+        var maximo = Math.ceil(datos.count/ tam) - 3;
         var Producto = $("[data-id='Productos']").text("");
         var pages = $("[data-id='pages']").text("");
         if (datos.count > 0) {
