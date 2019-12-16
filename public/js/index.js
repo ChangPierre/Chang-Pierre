@@ -2,13 +2,13 @@
 $(document).ready(function () {
     var page = get("page");
     if (page === null) {
-        page = 0;
+        page = 2;
     }
     //algoritmos de generacion de banner
     var banner = $("[data-id='banner']").text("");
     socket.emit("ObtenerBannerCount");
     socket.on("ObtenerBannerCount.RPTA", function (num) {
-        if(num>3){
+        if(num>0){
             banner.append(function () {
                 var bannerlist = $('<ul class="bannerlist"></ul>');
                 socket.emit("ObtenerBanner");
