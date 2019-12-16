@@ -53,7 +53,7 @@ $(document).ready(function () {
     });
 
     //algoritmo de generacion de lista de productos
-    var tam = 12;
+    var tam = 8;
     socket.emit("ObtenProductos", {limit: tam, offset: page});
     socket.on("ObtenProductos.RPTA",function (datos) {
         var maximo = Math.ceil(datos.count/ tam) - 1;
