@@ -2,7 +2,7 @@
 $(document).ready(function () {
     var page = get("page");
     if (page === null) {
-        page = 2;
+        page = 0;
     }
     //algoritmos de generacion de banner
     var banner = $("[data-id='banner']").text("");
