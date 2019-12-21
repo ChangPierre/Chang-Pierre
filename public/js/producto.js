@@ -136,7 +136,7 @@ $(document).ready(function () {
             .append($('<div class="nombre"></div>')
             .append($('<span></span>').text(prdt.nombre)))
             .append($('<div class="price"></div>')
-            .append($('<span class="precio"></span>').text(precio + MONEDA))))
+            .append($('<span class="precio"></span>').text(MONEDA + precio))))
             .append($('<div class="producto listImagenes"></div>')
             .append($('<span class="up" onclick="javascrip:subirImg($(this),0)"><i class="fa fa-chevron-up"></i></span>'))
             .append(function(){
