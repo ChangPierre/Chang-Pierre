@@ -188,6 +188,7 @@ var compraFinal = function () {
 };
 
 var tableCheck = function (dat) {
+    var entro = true;
     userID = $("#userID").val();
     dat.text("");
     dat.append($('<tr></tr>')
@@ -199,6 +200,8 @@ var tableCheck = function (dat) {
     .append($('<th></th>')));
     socket.emit("ObtenerVentaTipo",{idCliente:userID,tipo:0});
     socket.on("ObtenerVentaTipo.RPTA",function (ventas) {
+        if(entro){
+            entro = false;
         CHECK = ventas;
         ventas.forEach(function (check) {
             var precio = precioCD(check.precio,check.descuento);
@@ -218,6 +221,7 @@ var tableCheck = function (dat) {
             .append($('<span></span>').text(precioSD(precio, check.cantidad))))
             .append($('<td class="recycle"></td>')
             .append($('<button onclick="removeCheck($(this))" class="fa fa-trash"></button>'))));
+         }
         });
         precioTotal();
     });
