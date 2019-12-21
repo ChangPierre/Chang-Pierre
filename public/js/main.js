@@ -669,11 +669,11 @@ var compra = function (i) {
             .append($('<figure></figure>')
             .append($('<img>').attr("src", prdt.imagenPrincipal).attr("alt", prdt.nombre))));
             for (var j in prdt.type) {
-                if(prdt.type[j].img != null){
+                if(prdt.type[j].imagen != null){
                     var option = prdt.type[j];
                     imagenes.append($('<li onclick="cambiarImg($(this))"></li>')
                     .append($('<figure></figure>')
-                    .append($('<img>').attr("src", option.img).attr("alt", prdt.nombre))));
+                    .append($('<img>').attr("src", option.imagen).attr("alt", prdt.nombre))));
                 }
             }
             return imagenes;
