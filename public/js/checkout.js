@@ -202,28 +202,28 @@ var tableCheck = function (dat) {
     socket.on("ObtenerVentaTipo.RPTA",function (ventas) {
         if(entro){
             entro = false;
-        CHECK = ventas;
-        ventas.forEach(function (check) {
-            var precio = precioCD(check.precio,check.descuento);
-            dat.append($('<tr></tr>')
-            .append($('<td></td>')
-            .append($('<img>').attr("src", check.imagenPrincipal).attr("alt", check.nombre)))
-            .append($('<td class="prod"></td>')
-            .append($('<a></a>').attr("href", "producto?producto=" + check.idProducto).text(check.nombre))
-            .append($('<span></span>').text("Presentacion : " + check.talla + ", " + check.color)))
-            .append($('<td class="pvp"></td>').text(MONEDA + precio))
-            .append($('<td class="boton_cant cont"></td>')
-            .append($('<button class="fa fa-minus"></button>').attr("onclick", "minusChangeCheck($(this))"))
-            .append($('<input type="hidden" class="id">').val(check.idVenta))
-            .append($('<input type="number" class="number" min="1" pattern="^[0-9]+" onchange="countChangeCheck($(this))" required>').attr("max", check.stock).val(check.cantidad))
-            .append($('<button class="fa fa-plus"></button>').attr("onclick", "plusChangeCheck($(this))")))
-            .append($('<td class="precio"></td>')
-            .append($('<span></span>').text(precioSD(precio, check.cantidad))))
-            .append($('<td class="recycle"></td>')
-            .append($('<button onclick="removeCheck($(this))" class="fa fa-trash"></button>'))));
-         }
-        });
-        precioTotal();
+            CHECK = ventas;
+            ventas.forEach(function (check) {
+                var precio = precioCD(check.precio,check.descuento);
+                dat.append($('<tr></tr>')
+                .append($('<td></td>')
+                .append($('<img>').attr("src", check.imagenPrincipal).attr("alt", check.nombre)))
+                .append($('<td class="prod"></td>')
+                .append($('<a></a>').attr("href", "producto?producto=" + check.idProducto).text(check.nombre))
+                .append($('<span></span>').text("Presentacion : " + check.talla + ", " + check.color)))
+                .append($('<td class="pvp"></td>').text(MONEDA + precio))
+                .append($('<td class="boton_cant cont"></td>')
+                .append($('<button class="fa fa-minus"></button>').attr("onclick", "minusChangeCheck($(this))"))
+                .append($('<input type="hidden" class="id">').val(check.idVenta))
+                .append($('<input type="number" class="number" min="1" pattern="^[0-9]+" onchange="countChangeCheck($(this))" required>').attr("max", check.stock).val(check.cantidad))
+                .append($('<button class="fa fa-plus"></button>').attr("onclick", "plusChangeCheck($(this))")))
+                .append($('<td class="precio"></td>')
+                .append($('<span></span>').text(precioSD(precio, check.cantidad))))
+                .append($('<td class="recycle"></td>')
+                .append($('<button onclick="removeCheck($(this))" class="fa fa-trash"></button>'))));
+            });
+            precioTotal();
+        }
     });
     return dat;
 };
