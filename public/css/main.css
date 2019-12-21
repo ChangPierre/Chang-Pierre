@@ -2128,10 +2128,10 @@ footer a {
     display: none;
     width: 100%;
     padding: 1rem 0.5rem;
-    background: #fbc000;
+    background: #f5bae3;
     color: #66512c;
     border: 0;
-    border-bottom: 0.3rem solid #e8c040;
+    border-bottom: 0.3rem solid #f5bae3;
     border-radius: 0 0 0.5rem 0.5rem;
     font-weight: bold;
 }
@@ -2145,7 +2145,7 @@ footer a {
 }
 
 .productos > li button:hover {
-    background: #ffd650;
+    background: #f5bae3;
 }
 
 .productos > li button:active {
