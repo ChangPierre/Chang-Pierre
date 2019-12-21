@@ -475,9 +475,9 @@ header > .header-mobil {
 /*******************************************************************************************************/
 
 footer {
-    background: #f5bae3;
+    background: #333;
     box-shadow: 0 -0.2rem 0.2rem 0 #00000033;
-    color: #fcd03f;
+    color: #f5bae3;
 }
 
 footer a {
