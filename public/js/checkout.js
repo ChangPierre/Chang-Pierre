@@ -165,9 +165,9 @@ var compraFinal = function () {
         .append($('<div class="lateral"></div>')
             .append($('<img src="images/home/logo.png" alt="Calidad Item" width="139">'))
             .append($('<ul></ul>')
-                .append($('<li>MÁS DE 100.000 TOP MARCAS</li>'))
-                .append($('<li>SIEMPRE PRECIOS BAJOS, GARANTIZADO</li>'))
-                .append($('<li>AHORRA CON CADA COMPRA</li>'))
+                .append($('<li>NUEVAS TENDENCIAS DE TEMPORADAS</li>'))
+                .append($('<li>CON LA MEJOR CALIDAD, GARANTIZADO</li>'))
+                .append($('<li>APROVECHA LA NUEVA COLECCIÓN QUE TENEMOS PARA TI</li>'))
                 .append($('<li>OFERTAS EXCLUSIVAS PARA CLIENTES REGISTRADOS</li>')))
             .append($('<p>Al confirmar pago indicas que: Haz leído y aceptado la <a href="#"> política de privacidad </a>.</p>')))
         .append(function () {
