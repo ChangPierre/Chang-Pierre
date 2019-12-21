@@ -545,7 +545,7 @@ footer a {
     border: 0.2rem solid transparent;
     display: inline-block;
     border-radius: 3.5rem;
-    background: #fbc000;
+    background: #f5bae3;
     margin: 1rem;
     -webkit-transition: linear .3s;
     -o-transition: linear .3s;
@@ -563,12 +563,12 @@ footer a {
 }
 
 .redes li:hover {
-    border: 0.2rem solid #fbc000;
+    border: 0.2rem solid #f5bae3;
     background: #66512c;
 }
 
 .redes a:hover {
-    color: #fbc000;
+    color: #f5bae3;
 }
 
 .redes i {
@@ -865,14 +865,14 @@ footer a {
     display: block;
     margin: 0 auto auto;
     background-color: #ffd44a;
-    background: #e8b200;
-    background: -moz-linear-gradient(45deg, #f5bae3 0%, #ffd95e 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, #f5bae3), color-stop(100%, #ffd95e));
-    background: -webkit-linear-gradient(45deg, #f5bae3 0%, #ffd95e 100%);
-    background: -o-linear-gradient(45deg, #f5bae3 0%, #ffd95e 100%);
-    background: -ms-linear-gradient(45deg, #f5bae3 0%, #ffd95e 100%);
-    background: linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8b200', endColorstr='#ffd95e', GradientType=1);
+f5bae3  background: #e8b200;
+    background: -moz-linear-gradient(45deg, #f5bae3 0%, #f5bae3 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #f5bae3),f5bae3-stop(100%, #f5baf5bae3));
+    background: -webkit-linear-gradient(45deg, #f5bae3 0%, #f5bae3 100%);
+    background: -o-linear-gradient(45deg, #f5bae3 0%, #f5bae3 100%);
+    background: -ms-linear-gradient(45deg, #f5bae3 0%, #f5bae3 100%);
+    background: linear-gradient(45deg, #f5bae3 0%, #f5bae3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5bae3', endColorstr='#f5bae3', GradientType=1);
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
