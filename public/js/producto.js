@@ -145,11 +145,11 @@ $(document).ready(function () {
                 .append($('<figure></figure>')
                 .append($('<img>').attr("src", prdt.imagenPrincipal).attr("alt", prdt.nombre))));
                 for (let j in prdt.type) {
-                    if(prdt.type[j].img != null){
+                    if(prdt.type[j].imagen != null){
                         let option = prdt.type[j];
                         imagenes.append($('<li onclick="javascript:cambiarImg($(this))"></li>')
                         .append($('<figure></figure>')
-                        .append($('<img>').attr("src", option.img).attr("alt", prdt.nombre))));
+                        .append($('<img>').attr("src", option.imagen).attr("alt", prdt.nombre))));
                     }
                 }
                 return imagenes;
