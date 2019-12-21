@@ -866,11 +866,11 @@ footer a {
     margin: 0 auto auto;
     background-color: #ffd44a;
     background: #e8b200;
-    background: -moz-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, #e8b200), color-stop(100%, #ffd95e));
-    background: -webkit-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
-    background: -o-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
-    background: -ms-linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
+    background: -moz-linear-gradient(45deg, #f5bae3 0%, #ffd95e 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #f5bae3), color-stop(100%, #ffd95e));
+    background: -webkit-linear-gradient(45deg, #f5bae3 0%, #ffd95e 100%);
+    background: -o-linear-gradient(45deg, #f5bae3 0%, #ffd95e 100%);
+    background: -ms-linear-gradient(45deg, #f5bae3 0%, #ffd95e 100%);
     background: linear-gradient(45deg, #e8b200 0%, #ffd95e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8b200', endColorstr='#ffd95e', GradientType=1);
     -webkit-transform: translateX(0);
