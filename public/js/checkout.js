@@ -111,7 +111,7 @@ var detalleEnvio = function (value,typo) {
         .append($('<label for="comprar_direccion_2">Direccion, renglón 2</label>'))
         .append($('<input id="comprar_direccion_2" type="tel" autocomplete="false" placeholder="Opcional">'))
         .append($('<label class="mitad right">Pais</label>'))
-        .append($('<label for="comprar_provincia" class="mitad left">Estado o provincia</label>'))
+        .append($('<label for="comprar_provincia" class="mitad left">Distrito</label>'))
         .append($('<select id="comprar_pais" class="mitad right"></select>')
         .append($('<option id="trans-label_pais value="" default="default" selected="selected">Perú</option>'))
         .append($('<option value="1">Brasil</option>'))
