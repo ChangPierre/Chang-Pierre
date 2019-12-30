@@ -146,7 +146,7 @@ var detallePago = function (value,typo) {
         .append($('<a href="javascript:detallePago(false,true)"><i class="fa fa-pencil"></i>Editar</a>')));
     } else {
         Pag = true;
-        formulario.append($('<label for="comprar_tarjeta">Número de tarjeta <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        formulario.append($('<label for="comprar_tarjeta">Número de tarjeta form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="6D8666NFNDCXA">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
